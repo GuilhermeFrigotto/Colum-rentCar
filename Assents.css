@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+
+}
+
+body {
+    background-color: #f1f1f1f1; 
+    Font size: 15px
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    list-style: none;
+    
+}
+
+.box-quadro{
+    width: 20vw;
+}
+
+.car-sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.car-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.car-luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.box-quadro:nth-child(1){
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.box-quadro:nth-child(3){
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.box-img {
+    padding: 2.5rem;
+    width: 20%;
+}
+
+.texto-principal{
+    color: #fff;
+    padding: 0 2.5rem;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+
+.texto-secundario {
+    color: hsla(0, 0%, 100%, 0.55);
+    padding: 1.25rem 2.5rem;
+    font-family:'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.563rem;
+}
+
+.botao{
+    margin: 2.5rem;
+    padding: 0.625rem 1.875rem;
+    border-radius: 3rem;
+    border-color: #fff;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
+
+.botao-sedans{
+    color: hsl(31, 77%, 52%);
+}
+
+.botao-suvs{
+    color: hsl(184, 100%, 22%);
+}
+
+.botao-luxury{
+    color:hsl(179, 100%, 13%) ;
+}
+
+.botao:hover{
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+
+}
+
+
+@media screen and (max-width:826px){   
+    .container {
+        height: 200vh;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;        
+    }
+    
+    .box-quadro{
+        width: 80vw;
+    }
+
+    .box-quadro:nth-child(1){
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    
+    .box-quadro:nth-child(3){
+        border-radius: 0 0 0.5rem 0.5rem ;
+    }
